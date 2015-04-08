@@ -26,17 +26,17 @@ $frame[1] = '<font color="#cd0000">Weak Frame</font>'
 $frame[2] = '<font color="#0000CD">Weak Frame</font>'
 $frame[2] = '<font color="#008000">Sturdy Frame</font>'
 
-$boards[1] = '<font color="#cd0000">Weak Sideboard</font>'
-$boards[2] = '<font color="#0000CD">Sturdy Sideboard</font>'
-$boards[2] = '<font color="#008000">Sturdy Sideboard</font>'
+$boards[1] = '<font color="#cd0000">Light Sideboard</font>'
+$boards[2] = '<font color="#0000CD">Armored Sideboard</font>'
+$boards[2] = '<font color="#008000">Armored Sideboard</font>'
 
-$chasis[1] = '<font color="#cd0000">Подвеска трещитSuspension bursting</font>'
-$chasis[2] = '<font color="#0000CD">Подвеска функционирует</font>'
+$chasis[1] = '<font color="#cd0000">Lightweight suspension</font>'
+$chasis[2] = '<font color="#0000CD">Lightweight suspension</font>'
 $chasis[2] = '<font color="#008000">Reinforced suspension</font>'
 
-$wheels[1] = '<font color="#cd0000">Flimsy Wheels</font>'
+$wheels[1] = '<font color="#cd0000">Standard Wheels</font>'
 $wheels[2] = '<font color="#0000CD">Reinforced Wheels</font>'
-$wheels[2] = '<font color="#008000">Strong Wheels</font>'
+$wheels[2] = '<font color="#008000">Reinforced Wheels</font>'
 
 $rider[1] = 'master'
 $rider[2] = 'ride_avgia'
@@ -60,7 +60,7 @@ $race_drahonthees['crushed'] = {}
 $race_russian['crushed'] = {}
 $race_finishline['crushed'] = {}
 
-$rider_description['master'] = 'Ваша колесница пока что держится - надо продолжать гонку'
+$rider_description['master'] = 'Your chariot rests before you waiting to continue the race.'
 $race_startline['master'] = {}
 $race_straight['master'] = {}
 $race_curve['master'] = {}
