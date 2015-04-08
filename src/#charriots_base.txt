@@ -13,30 +13,30 @@ $trace_type[10] = 'dragon_teeth'
 $trace_type[11] = 'concrete_jungle' 
 $trace_type[12] = 'bladestrings' 
 
-$trace_name['ride_start'] = 'Старт'
-$trace_name['straight'] = 'Прямая'
-$trace_name['curve'] = 'Крутой поворот'
-$trace_name['russian_road'] = 'Русский асфальт'
-$trace_name['dragon_teeth'] = 'Драконьи зубы'
-$trace_name['concrete_jungle'] = 'Бетонные джунгли'
-$trace_name['bladestrings'] = 'Струны-лезвия'
-$trace_name['ride_finish'] = 'Финишная прямая'
+$trace_name['ride_start'] = 'Start'
+$trace_name['straight'] = 'Straight'
+$trace_name['curve'] = 'Hairpin turn'
+$trace_name['russian_road'] = 'Severely damaged roadway'
+$trace_name['dragon_teeth'] = 'Dragon's Teeth'
+$trace_name['concrete_jungle'] = 'Concrete Jungle'
+$trace_name['bladestrings'] = 'Garrote Wire'
+$trace_name['ride_finish'] = 'Finish Line'
 
-$frame[1] = '<font color="#cd0000">Хрупкая рама</font>'
-$frame[2] = '<font color="#0000CD">Хрупкая рама</font>'
-$frame[2] = '<font color="#008000">Прочная рама</font>'
+$frame[1] = '<font color="#cd0000">Weak Frame</font>'
+$frame[2] = '<font color="#0000CD">Weak Frame</font>'
+$frame[2] = '<font color="#008000">Sturdy Frame</font>'
 
-$boards[1] = '<font color="#cd0000">Борта еле держатся</font>'
-$boards[2] = '<font color="#0000CD">Крепкие борта</font>'
-$boards[2] = '<font color="#008000">Крепкие борта</font>'
+$boards[1] = '<font color="#cd0000">Weak Sideboard</font>'
+$boards[2] = '<font color="#0000CD">Sturdy Sideboard</font>'
+$boards[2] = '<font color="#008000">Sturdy Sideboard</font>'
 
-$chasis[1] = '<font color="#cd0000">Подвеска трещит</font>'
+$chasis[1] = '<font color="#cd0000">Подвеска трещитSuspension bursting</font>'
 $chasis[2] = '<font color="#0000CD">Подвеска функционирует</font>'
-$chasis[2] = '<font color="#008000">Усиленная подвеска</font>'
+$chasis[2] = '<font color="#008000">Reinforced suspension</font>'
 
-$wheels[1] = '<font color="#cd0000">Колёса слабоваты</font>'
-$wheels[2] = '<font color="#0000CD">Усиленные колёса</font>'
-$wheels[2] = '<font color="#008000">Надёжные колёса</font>'
+$wheels[1] = '<font color="#cd0000">Flimsy Wheels</font>'
+$wheels[2] = '<font color="#0000CD">Reinforced Wheels</font>'
+$wheels[2] = '<font color="#008000">Strong Wheels</font>'
 
 $rider[1] = 'master'
 $rider[2] = 'ride_avgia'
@@ -48,7 +48,7 @@ $rider[7] = 'ride_angelika'
 
 rider_structure['master'] = 100
 
-$rider_description['crushed'] = 'Этот противник выбыл из гонки. Вам больше не надо о нём беспокоиться.'
+$rider_description['crushed'] = 'Your enemy is out of the race and no longer a concern.'
 $rider_ava['crushed'] = 'content/pic/blank_ava.jpg'
 rider_structure['crushed'] = 100
 $race_startline['crushed'] = {}
@@ -70,10 +70,10 @@ $race_drahonthees['master'] = {}
 $race_russian['master'] = {}
 $race_finishline['master'] = {}
 
-$rider_name['ride_angelika'] = 'Ангелика'
+$rider_name['ride_angelika'] = 'Angelica'
 $rider_ava['ride_angelika'] = 'content/pic/mob/ride_angelika.jpg'
 rider_structure['ride_angelika'] = 4
-$rider_description['ride_angelika'] = 'Для Ангелики скачки — это просто возможность натренировать рабыню. Скакунья отлично вышколена, но не выделяется телосложением. Колесница тяжелая и хорошо защищена.'
+$rider_description['ride_angelika'] = 'Angelica sees racing as just another opportunity to train her slave. Her pony may be perfectly schooled, but it certainly doesn't stand out. Her chariot will be heavy and well protected.'
 $race_startline['ride_angelika'] = {
 speed_points['ride_angelika'] += RAND(12,14)
 }
@@ -107,10 +107,10 @@ $race_finishline['ride_angelika'] = {
 speed_points['ride_angelika'] += RAND(14,17)
 }
 
-$rider_name['ride_avgia'] = 'Авгия'
+$rider_name['ride_avgia'] = 'Avgia'
 $rider_ava['ride_avgia'] = 'content/pic/mob/ride_avgia.jpg'
 rider_structure['ride_avgia'] = 2
-$rider_description['ride_avgia'] = 'Авгия — крайне опасный противник. Её скаунья отличается высочайшей подготовкой и отличным телосложением. Колесница лёгкая и манёвренная.'
+$rider_description['ride_avgia'] = 'Avgia is a very dangerous opponent. Her steed is of the highest quality, and drives a light and highly maneuverable chariot.
 $race_startline['ride_angelika'] = {
 speed_points['ride_avgia'] += RAND(15,17)
 }
@@ -144,10 +144,10 @@ $race_finishline['ride_avgia'] = {
 speed_points['ride_avgia'] += RAND(17,20)
 }
 
-$rider_name['ride_geralt'] = 'Джеральд'
+$rider_name['ride_geralt'] = 'Gerald'
 $rider_ava['ride_geralt'] = 'content/pic/mob/ride_geralt.jpg'
 rider_structure['ride_geralt'] = 5
-$rider_description['ride_geralt'] = 'Джеральд скорее боец, чем гонщик. В качестве скакуньи он использует орчиху, не слишком быструю, но невероятно сильную. Колесница предельно забронирована и утяжелена'
+$rider_description['ride_geralt'] = 'Gerald prefers to fight than to race. As steeds he uses an orc of a man. He may not be too fast, but he's incredibly strong. Gerald prefers a reinforced, and heavy chariot.'
 $race_startline['ride_geralt'] = {
 speed_points['ride_geralt'] += RAND(11,13)
 }
@@ -181,10 +181,10 @@ $race_finishline['ride_geralt'] = {
 speed_points['ride_geralt'] += RAND(13,16)
 }
 
-$rider_name['ride_ippolita'] = 'Ипполита'
+$rider_name['ride_ippolita'] = 'Ippolita'
 $rider_ava['ride_ippolita'] = 'content/pic/mob/ride_ippolita.jpg'
 rider_structure['ride_ippolita'] = 3
-$rider_description['ride_ippolita'] = 'Ипполита — большая энтузиастка понидевок. Её колесница средняя по защите и весу, но скакунья имеет отличную стать и хорошо подготовлена.'
+$rider_description['ride_ippolita'] = 'Ippolita - a great pony enthusiast. Her chariot may have average protection and weight, but her steed is top of the line.'
 $race_startline['ride_ippolita'] = {
 speed_points['ride_ippolita'] += RAND(14,16)
 }
@@ -218,10 +218,10 @@ $race_finishline['ride_ippolita'] = {
 speed_points['ride_ippolita'] += RAND(16,19)
 }
 
-$rider_name['ride_jeevs'] = 'Дживс'
+$rider_name['ride_jeevs'] = 'Jeeves'
 $rider_ava['ride_jeevs'] = 'content/pic/mob/ride_jeeves.jpg'
 rider_structure['ride_jeevs'] = 4
-$rider_description['ride_jeevs'] = 'Дживс предпочитает во всём сбалансированные, взвешенные решения. Его рабыня хорошо подготовлена, но не специализируется на гонках. Колесница не слишком тяжёлая, но зато защищенная.'
+$rider_description['ride_jeevs'] = 'Jeeves prefers a more balanced approach based on well-informed decisions. His has ensured that his slave is well prepared despite not having them specialize in racing. And his chariot may not be the strongest, but it's definitely sturdy.'
 $race_startline['ride_jeevs'] = {
 speed_points['ride_jeevs'] += RAND(10,12)
 }
@@ -255,10 +255,10 @@ $race_finishline['ride_jeevs'] = {
 speed_points['ride_jeevs'] += RAND(12,15)
 }
 
-$rider_name['ride_morrigan'] = 'Морриган'
+$rider_name['ride_morrigan'] = 'Morrigan'
 $rider_ava['ride_morrigan'] = 'content/pic/mob/ride_morrigan.jpg'
 rider_structure['ride_morrigan'] = 1
-$rider_description['ride_morrigan'] = 'Морриган любит безумную скорость и всегда рискует сверх меры. Скакунья у неё средненькая, зато колесница облегчена до предела.'
+$rider_description['ride_morrigan'] = 'Morrigan loves pushing the speed to the limit, and always takes unbelievable risks. Her pony may be mediocre, but the chariot is fitted to its limits.'
 $race_startline['ride_morrigan'] = {
 speed_points['ride_morrigan'] += RAND(16,18)
 }

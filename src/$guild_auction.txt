@@ -46,13 +46,13 @@ IF slave_specialisation[$interesting_specialisation[$auction_participant[i]]] = 
  END
 END
 
-!$auction_flow[i] = '<<$npc_name[$auction_participant[i]]>>. Интересует <<$interesting_specialisation[$auction_participant[i]]>> ранга <<demand_rating[$auction_participant[i]]>>. Максимум <<cap_summ[$auction_participant[i]]>> за этот лот.'  
+!$auction_flow[i] = '<<$npc_name[$auction_participant[i]]>>. Interested <<$interesting_specialisation[$auction_participant[i]]>> rank <<demand_rating[$auction_participant[i]]>>. Max <<cap_summ[$auction_participant[i]]>> for this lot.'  
 if i < n: jump 'interest_loop'
 
 bank_size = 100 * rating
 $auction_flow[1] = '
-   Перекупщик предлагает стартовую цену лота в <<bank_size>> искр. Если никто не захочет поднимать ставки, <<$slave_name>> отойдёт ему по этой цене.'
-$auc_winner = 'Перекупщик'
+   The reseller offers the starting price of <<bank_size>> sparks. If there are no further bids, <<$slave_name>> is to be sold at that price.'
+$auc_winner = 'The reseller'
 bet_size = auction_increment[rating]
 y = 0
 i = 0
@@ -77,7 +77,7 @@ IF bank_size < cap_summ[$auction_participant[i]] and i ! y:
  IF bet_size > 0:
   bank_size += bet_size
   $auction_flow[u] = '
-   <<$npc_name[$auction_participant[i]]>> повышает ставку на <<bet_size>> до <<bank_size>>'
+   <<$npc_name[$auction_participant[i]]>> raises <<bet_size>> over <<bank_size>>'
   $auc_winner = $npc_name[$auction_participant[i]]
   y = i
   x = 1
@@ -89,12 +89,12 @@ END
 
 if i < n: jump 'torg_loop'
 
-$auction_hammer[1] = '   [АУКЦИОНИСТ]
-   - <<bank_size>> искр раз!'
-$auction_hammer[2] = '   [АУКЦИОНИСТ]
-   - <<bank_size>> искр два! Неужели это финальная цена?'
-$auction_hammer[3] = '   [АУКЦИОНИСТ]
-   - <<bank_size>> искр три! Продано!!! Финальная цена: <<bank_size>>. Покупатель: <<$auc_winner>>.'
+$auction_hammer[1] = '   [Auctioneer]
+   - <<bank_size>> going once!'
+$auction_hammer[2] = '   [Auctioneer]
+   - <<bank_size>> going twice! Do I see another bid?'
+$auction_hammer[3] = '   [Auctioneer]
+   - Sold!!! <<$auc_winner>> wins with a final bid of <<bank_size>>.'
 $auction_flow[u] = $auction_hammer[x]
 i = 0
 u += 1

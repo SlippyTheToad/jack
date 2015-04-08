@@ -2,7 +2,7 @@
 количество_врагов = 1
 
 IF colloseum_fight = 1 or colloseum_fight = 11 or colloseum_fight = 21 or colloseum_fight = 31:
- $враг[1] = 'голая_рабыня'
+ $враг[1] = 'Unarmed Slave'
 END
 
 IF colloseum_fight = 2 or colloseum_fight = 12 or colloseum_fight = 22 or colloseum_fight = 32:
@@ -10,15 +10,15 @@ IF colloseum_fight = 2 or colloseum_fight = 12 or colloseum_fight = 22 or collos
 END
 
 IF colloseum_fight = 3 or colloseum_fight = 13 or colloseum_fight = 23 or colloseum_fight = 33:
- $враг[1] = 'шиноби'
+ $враг[1] = 'Shinobi'
 END
 
 IF colloseum_fight = 4 or colloseum_fight = 14 or colloseum_fight = 24 or colloseum_fight = 34:
- $враг[1] = 'амазонка'
+ $враг[1] = 'Amazon'
 END
 
 IF colloseum_fight = 5 or colloseum_fight = 15 or colloseum_fight = 25 or colloseum_fight = 35:
- $враг[1] = 'латница'
+ $враг[1] = 'Roman legionary'
 END
 
 IF colloseum_fight > 10:

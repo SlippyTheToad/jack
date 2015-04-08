@@ -106,7 +106,7 @@ IF x < 3:
  jump 'torg_loop_auto'
  else
  npc_participation_chance[$auction_participant[y]] = 0
- $auction_monitoring[u] = '   <<$npc_name[$trader[k]]>> выставляет <<$slave_type_name_sk[$trainer_slave_type[$trader[k]]]>> ранга <<$rating[rating]>>. По итогам торгов товар приобретает <<$auction_participant[y]>>. Финальная цена составила <<bank_size>> искр.'
+ $auction_monitoring[u] = '   <<$npc_name[$trader[k]]>> Exhibit <<$slave_type_name_sk[$trainer_slave_type[$trader[k]]]>> ranked <<$rating[rating]>>. At the auction's conclusion, the following was purchased: <<$auction_participant[y]>>. The final price was <<bank_size>> sparks.'
  u += 1
 END
 

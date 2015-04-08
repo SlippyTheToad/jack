@@ -43,15 +43,15 @@ IF torture_succed = 2:
 END
 if slave["fear"] > 5: slave["fear"] = 5
 
-$удача_пытки[0] = 'наказание провалилось'
-$удача_пытки[1] = 'наказание успешно, без повышения страха'
-$удача_пытки[2] = 'наказание успешно, c повышением страха'
-!msg 'уровень пытки = <<torture_intensity>>
-эффективность пытки = <<torture_fear>>
-Фактор фобий = <<phobia>>
-сопротивляемость рабыни = <<fear_resistance>>
-Результат: <<$удача_пытки[torture_succed]>>
-Новый уровень страха: <<slave["fear"]>>
+$удача_пытки[0] = 'The punishment failed!'
+$удача_пытки[1] = 'The Punishment was successful without scaring the slave further.'
+$удача_пытки[2] = 'The Punishment was successful, however the slave is terrified of you.'
+!msg 'Torture level = <<torture_intensity>>
+Torture effectiveness = <<torture_fear>>
+Phobia factor = <<phobia>>
+Slave's resistance to fear = <<fear_resistance>>
+Result: <<$удача_пытки[torture_succed]>>
+Fear level: <<slave["fear"]>>
 '
 --- torture_result ---------------------------------
 
